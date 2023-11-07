@@ -1,0 +1,23 @@
+# примеры API-запросов
+
+@baseUrl = http://localhost:5000/
+
+# создание сообщения
+POST {{baseUrl}}/message
+Content-Type: application/json
+
+{
+  "title": "News",
+  "description": "Some news",
+  "creator": "Some creator"
+}
+
+###
+
+# поиск сообщения
+GET {{baseUrl}}/message/4
+
+
+###
+# удалить сообщение
+DELETE {{baseUrl}}/message/1
